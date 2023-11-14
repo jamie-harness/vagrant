@@ -33,4 +33,5 @@ jobs:
       - name: install dependencies
         run: sudo apt -y install libarchive-tools
       - name: Run Tests
-        run: bundle exec rake test:unit
+        #run: bundle exec rake test:unit
+        run: "bundle exec rspec --format RspecJunitFormatter --out harness_test_results.xml --pattern test/unit/\*\*/\*_test.rb"
