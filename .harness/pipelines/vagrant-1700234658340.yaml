@@ -48,3 +48,6 @@ pipeline:
                       apt -y install libarchive-tools
                       bundle install
                     enableTestSplitting: true
+        when:
+          pipelineStatus: Success
+          condition: <+ trigger.event > == "PR"
