@@ -8,7 +8,7 @@ pipeline:
       codebase:
         build: <+input>
         connectorRef: account.Github_OAuth_1700234627966
-        repoName: vagrant
+        repoName: jimsheldon/vagrant
   stages:
     - stage:
         strategy:
