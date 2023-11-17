@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_vagrant_1700234707615-push-trigger-input-set
+  identifier: Build_vagrant_1700234707615pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_vagrant_1700234707615
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
